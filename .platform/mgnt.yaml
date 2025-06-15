@@ -1,0 +1,15 @@
+image:
+  repository: "ghcr.io/davitron/demo-api"
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+
+deployment:
+  enabled: true
+  name: api
+
+
+service:
+  enabled: true
+  type: ClusterIP
+  port: 80
